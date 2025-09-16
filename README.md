@@ -17,6 +17,7 @@
 
 O projeto foi organizado seguindo a arquitetura MVVM, resultando na seguinte estrutura de diretórios dentro da pasta lib:
 
+```
 tarefa_methodchannel/
 ├── lib/
 │   ├── main.dart                   # Ponto de entrada da aplicação
@@ -28,7 +29,7 @@ tarefa_methodchannel/
 │
 └── android/
     └── .../MainActivity.kt         # Ponto de entrada do lado nativo Android
-
+```
 
 ## Responsabilidades dos Arquivos
 
