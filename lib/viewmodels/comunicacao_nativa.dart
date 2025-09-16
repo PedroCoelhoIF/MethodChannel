@@ -7,7 +7,7 @@ class ComunicacaoNativaViewModel {
 
   Future<void> mostrarToastNativo() async {
     try {
-      final String mensagem = "Teste teste testando...";
+      final String mensagem = "Teste, teste, testando...";
       await platform.invokeMethod('showToast', {'message': mensagem});
     } on PlatformException catch (e) {
       print("Falha ao exibir o Toast: '${e.message}'.");
@@ -17,8 +17,8 @@ class ComunicacaoNativaViewModel {
   Future<void> mostrarAlertDialogNativo() async {
     try {
       final Map<String, String> arguments = {
-        'title': 'Alerta Alerta Alerta Nativo',
-        'message': 'Opa como que vai?',
+        'title': 'Alerta, Alerta, Alerta - [Alerta Nativo]',
+        'message': 'Opa, como que vai?',
       };
       await platform.invokeMethod('showAlertDialog', arguments);
     } on PlatformException catch (e) {
